@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOM & EVENT & THỰC HÀNH TỔNG HỢP</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="inforStudent">
+      <h2>Thông tin học viên</h2>
+      <form action="#">
+        <label for="studentId">Mã số sinh viên</label>
+        <input type="text" name="studentId" id="studentId" placeholder="Vui lòng nhập mã số sinh viên" />
+        <span class="error code-error"></span><br />
+        <label for="fullName">Họ và Tên</label>
+        <input type="text" name="fullName" id="fullName" placeholder="Vui lòng nhập tên" />
+        <span class="error name-error"></span><br />
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Vui lòng nhập email" />
+        <span class="error email-error"></span><br />
+        <label for="phone">Số điện thoại</label>
+        <input type="text" name="phone" id="phone" placeholder="Vui lòng nhập số điện thoại" />
+        <span class="error phone-error"></span><br />
+        <label for="address">Quê quán</label>
+        <input type="text" name="address" id="address" placeholder="Vui lòng nhập địa chỉ quê quán" />
+        <span class="error address-error"></span><br />
+        <label for="gender">Giới tính</label>
+        <input type="radio" name="gender" id="male" checked value="male" /><label for="male">Nam</label>
+        <input type="radio" name="gender" id="female" value="female" /><label for="female">Nữ</label><br />
+        <input type="submit" id="myBtn" value="Lưu lại" />
+      </form>
+    </div>
+    <div class=" listStudent">
+      <h2>Danh sách học viên</h2>
+      <table id="table">
+        <thead>
+          <tr>
+            <td>#</td>
+            <td>Mã số sinh viên</td>
+            <td>Họ và tên</td>
+            <td>Email</td>
+            <td>Điện thoại</td>
+            <td>Địa chỉ</td>
+            <td>Gender</td>
+            <td>Hành động</td>
+          </tr>
+        </thead>
+        <tbody id="content"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="/app.js"></script>
+</body>
+
+</html>

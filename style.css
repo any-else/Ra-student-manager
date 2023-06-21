@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+}
+.inforStudent {
+  position: relative;
+  flex: 1;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.inforStudent h2 {
+  padding: 5px;
+  margin-left: 95px;
+}
+.inforStudent input {
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#studentId,
+#fullName,
+#email,
+#phone,
+#address,
+#submit {
+  width: 200px;
+}
+#fullName {
+  margin-left: 38px;
+}
+#email {
+  margin-left: 71px;
+}
+#phone {
+  margin-left: 17px;
+}
+#address {
+  margin-left: 39px;
+}
+#submit {
+  margin-left: 113px;
+}
+#gender {
+  margin-left: 47px;
+}
+.listStudent {
+  flex: 2;
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table,
+thead,
+tr,
+td {
+  border: 1px solid black;
+}
+
+.error {
+  visibility: hidden;
+}
+
+.display-error {
+  color: red;
+  visibility: visible !important;
+}
